@@ -29,8 +29,20 @@ h1 {
   right: 10px;
   border: 1px solid black;
   padding: 6px 10px;
-  background-color: lightcoral;
   font-weight: bold;
+}
+
+/* Different background colors for each title */
+.card:first-of-type .card__title {
+  background-color: lightcoral; /* Crawfish & Chicken Wings */
+}
+
+.card:nth-of-type(2) .card__title {
+  background-color: lightseagreen; /* BBQ Brisket Pho */
+}
+
+.card:last-of-type .card__title {
+  background-color: khaki; /* Gulf Shrimp Bánh Mì */
 }
 
 /* Paragraph text */
