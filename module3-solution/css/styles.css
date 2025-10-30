@@ -1,0 +1,76 @@
+/* module 3 styles */
+
+body {
+  background-color: #fffaf5; /* background color for whole page */
+  color: #333; /* text color */
+  font-family: Helvetica, Arial, sans-serif; /* font style */
+}
+
+/* Navbar */
+.navbar-default {
+  background-color: #b8331a; /* red navbar */
+  border: none; /* removes border line */
+}
+
+.navbar-default .navbar-brand {
+  color: #fff !important; /* white restaurant name */
+  font-weight: bold; /* makes it thicker */
+  letter-spacing: 0.5px; /* small space between letters */
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff; /* white hamburger lines */
+}
+
+/* Main heading */
+h2 {
+  color: #b8331a; /* red heading */
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Menu sections */
+.demo-section {
+  background-color: #fff; /* white boxes */
+  border: 1px solid #eee; /* light outline */
+  border-radius: 8px; /* rounded corners */
+  min-height: 1000px; /* tall enough to force scroll */
+  padding: 40px 25px; /* space inside */
+  margin-bottom: 40px; /* space between boxes */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* soft shadow */
+}
+
+/* Section titles */
+.demo-section h3 {
+  color: #b8331a; /* red titles */
+  font-weight: 600; /* bold text */
+  text-transform: uppercase; /* all caps */
+  margin-bottom: 20px;
+}
+
+/* Paragraph text */
+.demo-section p {
+  line-height: 1.6; /* easier to read */
+  color: #444; /* softer black */
+}
+
+/* Hover effect for menu titles */
+.demo-section h3:hover {
+  color: #992a13; /* darker red when mouse over */
+}
+
+/* Mobile dropdown hover */
+.navbar-nav > li.visible-xs > a:hover {
+  background-color: #a42e17; /* darker red when hovered */
+  color: #fff !important;
+}
+
+/* Make the collapsed (mobile) menu text white */
+#collapsable-nav .nav > li.visible-xs > a {
+  color: #fff !important; /* white text for dropdown items */
+}
+
+/* Give collapsed dropdown a background color for grading */
+#collapsable-nav {
+  background-color: #b8331a; /* red background for open mobile menu */
+}
