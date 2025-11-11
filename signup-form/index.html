@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dream Vault — Sign Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <h1>Dream Vault</h1>
+        <p>Secure corporate storage for your subconscious.</p>
+      </div>
+      <p class="credit">Photo by Maxim Berg on Unsplash</p>
+    </aside>
+
+    <main class="main">
+      <h2>Where your off-duty mind goes to rest</h2>
+      
+      <h3>Create your account</h3>                  
+      <form action="#" method="post" novalidate>
+        <div class="row">
+          <label for="first_name">First name</label>
+          <input type="text" id="first_name" name="first_name" required>
+        </div>
+
+        <div class="row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="row">
+          <label for="password">Password (8+)</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+
+        <div class="row">
+          <label for="confirm_password">Confirm password</label>
+          <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+        </div>
+
+        <button type="submit" class="button">Create Account</button>
+        <p class="note">Already have an account? <a href="#">Log in</a></p>
+      </form>
+    </main>
+  </div>
+
+</body>
+</html>
