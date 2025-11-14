@@ -1,0 +1,208 @@
+/* basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* page layout grid */
+body {
+  font-family: "Poppins", system-ui, sans-serif;
+  background-color: #f3f4f8;
+
+  display: grid;
+  grid-template-columns: 250px 1fr; /* sidebar | everything else */
+  grid-template-rows: 140px 1fr;    /* header | main content */
+  height: 100vh;
+}
+
+/* sidebar on the left */
+.sidebar {
+  grid-row: 1 / 3; /* take full height */
+  background-color: #01c9bf;
+  color: #fff;
+
+  padding: 24px 20px;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* brand / main nav / bottom nav */
+  row-gap: 32px;
+}
+
+/* header at top */
+.header {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #fff;
+  padding: 16px 24px;
+}
+
+/* main content: two columns */
+.main-content {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+
+  padding: 24px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* left wide, right narrow */
+  gap: 24px;
+}
+
+/* header layout */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* search box */
+.header-left input[type="text"] {
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid #d0d4e0;
+  font-size: 0.9rem;
+  width: 260px;
+  outline: none;
+}
+
+.header-left input[type="text"]:focus {
+  border-color: #01c9bf;
+}
+
+/* header icons */
+.header .icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* user name text */
+.user-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* header buttons */
+.header button {
+  border: none;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  background-color: #01c9bf;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #c66fe6;
+}
+
+/* brand text */
+.brand h1 {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+
+.brand p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* sidebar links */
+.nav-main a,
+.nav-secondary a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  text-decoration: none;
+  color: inherit;
+
+  font-size: 0.95rem;
+  padding: 6px 8px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+}
+
+/* hover highlight */
+.nav-main a:hover,
+.nav-secondary a:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* default icon size */
+.icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+/* projects section – left column */
+.projects h2 {
+  margin-bottom: 16px;
+}
+
+.projects-grid {
+  display: grid;                          /* 2-column card layout */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+/* right column wrapper */
+.right-column {
+  display: flex;        /* stack announcements + trending */
+  flex-direction: column;
+  gap: 24px;            /* space between the two cards */
+}
+
+/* announcement + trending cards */
+.announcements,
+.trending {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08); /* small shadow */
+}
+
+/* titles in right column */
+.announcements h2,
+.trending h2 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+/* each announcement item */
+.announcement {
+  margin-bottom: 12px;   /* space between each item */
+}
+
+.announcement h3 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+/* trending list spacing */
+.trending-list {
+  padding-left: 20px;     /* normal bullet list indent */
+}
+
+.trending-list li {
+  margin-bottom: 8px;     /* space between bullets */
+}

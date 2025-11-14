@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Ops Dashboard</title>
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <h1>Home Ops</h1>
+      <p>Chiswick Domestic Command Centre</p>
+    </div>
+
+    <nav class="nav-main">
+      <a href="#"><img src="icons/view-dashboard-outline.svg" class="icon">Dashboard</a>
+      <a href="#"><img src="icons/food-drumstick.svg" class="icon">Meal Planner</a>
+      <a href="#"><img src="icons/map-marker-outline.svg" class="icon">Nursery Runs</a>
+      <a href="#"><img src="icons/water-outline.svg" class="icon">Hydration &amp; Macros</a>
+      <a href="#"><img src="icons/rugby.svg" class="icon">Rugby Schedule</a>
+      <a href="#"><img src="icons/cart-outline.svg" class="icon">Shopping List</a>
+      <a href="#"><img src="icons/clipboard-check-multiple.svg" class="icon">House Tasks</a>
+      <a href="#"><img src="icons/finance.svg" class="icon">Finances</a>
+      <a href="#"><img src="icons/alert-box-outline.svg" class="icon">Emergency Mode</a>
+    </nav>
+
+    <nav class="nav-secondary">
+      <a href="#"><img src="icons/cog-outline.svg" class="icon">Settings</a>
+      <a href="#"><img src="icons/face-agent.svg" class="icon">Support</a>
+      <a href="#"><img src="icons/security.svg" class="icon">Privacy</a>
+    </nav>
+  </aside>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-left">
+      <img src="icons/magnify-scan.svg" class="icon">
+      <input type="text" placeholder="Search chores...">
+    </div>
+
+    <div class="header-right">
+      <img src="icons/bell-outline.svg" class="icon">
+      <img src="icons/account-circle-outline.svg" class="icon">
+      <span class="user-name">Supervisor: Jim Bailey III</span>
+      <button>New Task</button>
+      <button>Add Meal</button>
+      <button>Reminder</button>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main-content">
+
+    <!-- Left column -->
+    <section class="projects">
+      <h2>Active Home Missions</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Grocery Run: Sainsbury’s</h3>
+          <p>Weekly essentials and toddler snacks.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Daughter WNBA Development</h3>
+          <p>Basketball IQ and dunking.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Meal Prep Week</h3>
+          <p>High-protein + hydration focus.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Planter Project</h3>
+          <p>New balcony layout and soil refresh.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Deep Clean Cycle</h3>
+             <p>Kitchen reboot + hoover reset.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Toddler Laundry Protocol</h3>
+            <p>Pre-soak, gentle cycle, tactical folding.</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Weekly Budget Sweep</h3>
+            <p>Check spending, adjust categories.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Right column -->
+    <div class="right-column">
+
+      <section class="announcements">
+        <h2>Announcements</h2>
+        <article class="announcement">
+          <h3>Nursery Update</h3>
+          <p>Early pickup on Friday. Bring umbrella.</p>
+        </article>
+
+        <article class="announcement">
+          <h3>Hydration Alert</h3>
+          <p>Pub night planned — hydrate.</p>
+        </article>
+
+        <article class="announcement">
+          <h3>Christmas is Coming</h3>
+          <p>Daughter is on the nice list.</p>
+        </article>
+      </section>
+
+      <section class="trending">
+        <h2>Trending</h2>
+        <ul class="trending-list">
+          <li>Most opened cupboard: Snacks</li>
+          <li>Highest task category: Laundry</li>
+          <li>Most booked slot: Pretend play</li>
+          <li>Notable pattern: Toddler chaos spike</li>
+        </ul>
+      </section>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
